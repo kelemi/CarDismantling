@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">再生家</string>
+
+    <string name="tip_not_get_data_and_pull">没有获取到相关数据，请尝试下拉刷新</string>
+
+    <string name="str_indexpage">首页</string>
+    <string name="str_my">我的</string>
+    <string name="str_setting">设置</string>
+    <string name="fail_to_contect_camcard">无法连接到相机,请检查权限设置</string>
+    <string name="intsig_copyright">上海合合信息科技发展有限公司\n Copyright© 2009-2016 版权所有</string>
+
+    <string name="tip_to_take_photo_to_record_info">请拍摄上传后确认电脑端已经获取照片，如无法获取请重新上传。</string>
+
+
+    <string name="loadingandwait">正在加载,请稍后...</string>
+</resources>

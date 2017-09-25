@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="38dp"
+        android:gravity="center"
+        android:text="行驶证预览识别SDK Demo"
+        android:textSize="25dp"
+        android:textColor="#ff34B3F7" />
+
+    <Button
+        android:id="@+id/btn_use_camare_module"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/btn_bg"
+        android:text="调用SDK相机模块识别示例"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btn_not_use_camare_module"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/btn_use_camare_module"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/btn_bg"
+        android:text="直接调用SDK识别示例"
+        android:textColor="#ffffff" />
+    
+    <TextView
+        android:id="@+id/text_copy_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="18dp"
+        android:gravity="center"
+        android:text="@string/intsig_copyright"
+        android:textColor="#ff34B3F7" />
+
+</RelativeLayout>

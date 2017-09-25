@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+
+    <com.aofan.cardismantling.widget.NoSlideViewPager
+        android:id="@+id/picvp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.aofan.cardismantling.widget.NoSlideViewPager>
+    <com.aofan.cardismantling.widget.viewpagerindicator.CirclePageIndicator
+        android:id="@+id/vpindicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin20">
+    </com.aofan.cardismantling.widget.viewpagerindicator.CirclePageIndicator>
+    <ImageView
+        android:id="@+id/leftbackiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ico_back_green"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:padding="@dimen/padding10"/>
+
+</RelativeLayout>

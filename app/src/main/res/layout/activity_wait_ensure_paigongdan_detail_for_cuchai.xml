@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <include layout="@layout/common_title_bar"/>
+    <LinearLayout
+        android:id="@+id/layout_ensure_chaijie_finish"
+        style="@style/WidthFullStyle"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding10"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/tv_ensure_chaijie_finish"
+            style="@style/EnsureBtnStyle"
+            android:text="确认完成拆解"/>
+    </LinearLayout>
+
+
+    <ScrollView
+        style="@style/FullStyle"
+        android:layout_below="@+id/titlebar"
+        android:layout_above="@+id/layout_ensure_chaijie_finish"
+        android:background="@color/grayqing"
+        >
+        <LinearLayout
+            style="@style/WidthFullStyle"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                style="@style/WidthFullStyle"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:padding="@dimen/padding10">
+                <TextView
+                    android:id="@+id/tv_carnum"
+                    style="@style/WidthFullStyle"
+                    android:background="@color/white"
+                    android:text="车牌号"
+                    android:textColor="@color/color_main"/>
+
+                <TextView
+                    android:id="@+id/tv_paigong_time"
+                    style="@style/WidthFullStyle"
+                    android:maxLines="4"
+                    android:layout_marginTop="@dimen/margin10"
+                    android:text="派工时间:"
+                    android:textColor="@color/gray"/>
+                <TextView
+                    android:id="@+id/tv_chaijie_workers"
+                    style="@style/NormalStyle"
+                    android:layout_marginTop="@dimen/margin10"
+                    android:textSize="@dimen/word14"
+                    android:textColor="@color/gray"
+                    android:text="拆解人员"/>
+                <TextView
+                    android:id="@+id/tv_chaijie_finish_time"
+                    style="@style/NormalStyle"
+                    android:layout_marginTop="@dimen/margin10"
+                    android:textSize="@dimen/word14"
+                    android:textColor="@color/gray"
+                    android:text="拆解完成时间"/>
+            </LinearLayout>
+            <LinearLayout
+                style="@style/WidthFullStyle"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/margin10"
+                android:padding="@dimen/padding10">
+                <TextView
+                    style="@style/WidthFullStyle"
+                    android:background="@color/white"
+                    android:text="拆解要求:"
+                    android:textColor="@color/color_main"/>
+
+                <TextView
+                    android:id="@+id/tv_chaijie_request"
+                    style="@style/WidthFullStyle"
+                    android:maxLines="4"
+                    android:layout_marginTop="@dimen/margin10"
+                    android:text="拆解要求:"
+                    android:textColor="@color/gray"/>
+            </LinearLayout>
+            <TextView
+                style="@style/WidthFullStyle"
+                android:text="拆解详情"
+                android:layout_marginTop="@dimen/margin10"
+                android:padding="@dimen/padding10"
+                android:background="@color/white"
+                android:textColor="@color/color_main"/>
+
+            <com.aofan.cardismantling.widget.GridViewForScrollView
+                android:id="@+id/gv_choosed_chaijie_pic"
+                style="@style/FullStyle"
+                android:background="@color/grayqing"
+                android:horizontalSpacing="1dp"
+                android:numColumns="3"
+                android:verticalSpacing="1dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

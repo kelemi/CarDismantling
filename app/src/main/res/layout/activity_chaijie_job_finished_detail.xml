@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <include
+        layout="@layout/common_title_bar"/>
+
+<!--
+    <ScrollView
+        style="@style/FullStyle"
+        android:layout_below="@+id/titlebar"
+        android:background="@color/grayqing"
+        >-->
+        <LinearLayout
+            style="@style/WidthFullStyle"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                style="@style/WidthFullStyle"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:padding="@dimen/padding10">
+                <TextView
+                    style="@style/WidthFullStyle"
+                    android:background="@color/white"
+                    android:text="拆解要求:"
+                    android:textColor="@color/color_main"/>
+
+                <TextView
+                    android:id="@+id/tv_chaijie_request"
+                    style="@style/WidthFullStyle"
+                    android:maxLines="4"
+                    android:layout_marginTop="@dimen/margin10"
+                    android:text="拆解要求:"
+                    android:textColor="@color/gray"/>
+            </LinearLayout>
+            <TextView
+                style="@style/WidthFullStyle"
+                android:text="拆解详情"
+                android:layout_marginTop="@dimen/margin10"
+                android:padding="@dimen/padding10"
+                android:background="@color/white"
+                android:textColor="@color/color_main"/>
+            <ListView
+                android:id="@+id/lv"
+                style="@style/WidthFullStyle"
+                android:scrollbarFadeDuration="0"
+                android:divider="@color/grayqing"
+                android:dividerHeight="1dp"/>
+
+        </LinearLayout>
+
+    <!--</ScrollView>-->
+</RelativeLayout>

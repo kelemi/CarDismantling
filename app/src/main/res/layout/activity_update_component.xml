@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_component_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:text="零件名称"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_tag_lingjian_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin10"
+                android:layout_toLeftOf="@+id/layout_lingjian_num_edit"
+                android:padding="5dp"
+                android:text="数量:" />
+
+            <LinearLayout
+                android:id="@+id/layout_lingjian_num_edit"
+                style="@style/NormalStyle"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_add_lingjian_num"
+                    style="@style/NormalStyle"
+                    android:background="@drawable/shape_rect_black_line"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/padding5"
+                    android:paddingRight="@dimen/padding5"
+                    android:text="+"
+                    android:textSize="@dimen/word20" />
+
+                <TextView
+                    android:id="@+id/tv_lingjian_num"
+                    style="@style/NormalStyle"
+                    android:background="@drawable/shape_rect_black_line"
+                    android:ems="2"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:text="1"
+                    android:textSize="@dimen/word20" />
+
+                <TextView
+                    android:id="@+id/tv_sub_lingjian_num"
+                    style="@style/NormalStyle"
+                    android:background="@drawable/shape_rect_black_line"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/padding5"
+                    android:paddingRight="@dimen/padding5"
+                    android:text="—"
+                    android:textSize="@dimen/word20" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.aofan.cardismantling.widget.GridViewForScrollView
+            android:id="@+id/gv_components"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_top"
+            android:background="@color/white"
+            android:horizontalSpacing="1dp"
+            android:numColumns="4"
+            android:verticalSpacing="1dp" />
+
+
+        <TextView
+            android:id="@+id/tv_take_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gv_components"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/tv_upphoto"
+            android:background="@drawable/shape_rect_green_line"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:text="拍照" />
+
+        <TextView
+            android:id="@+id/tv_upphoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/gv_components"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_rect_green_line"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:text="上传" />
+
+    </RelativeLayout>
+</LinearLayout>

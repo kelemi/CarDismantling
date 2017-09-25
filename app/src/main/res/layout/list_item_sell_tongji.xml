@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/padding10">
+    <TextView
+        android:id="@+id/tv_lingjian_name"
+        style="@style/NormalStyle"
+        android:text="零件名称"
+        android:textSize="@dimen/word16"
+        />
+    <TextView
+        android:id="@+id/tv_lingjian_sell_price"
+        style="@style/NormalStyle"
+        android:layout_alignParentRight="true"
+        android:text="出售价格:xxxx"
+        android:textSize="@dimen/word16"
+        />
+
+    <TextView
+        android:id="@+id/tv_lingjian_seller"
+        style="@style/NormalStyle"
+        android:layout_below="@+id/tv_lingjian_name"
+        android:layout_marginTop="@dimen/margin5"
+        android:text="销售人员:xxx"
+        android:textSize="@dimen/word16"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_lingjian_sell_time"
+        style="@style/WidthFullStyle"
+        android:gravity="right"
+        android:layout_below="@+id/tv_lingjian_name"
+        android:layout_marginTop="@dimen/margin5"
+        android:layout_toRightOf="@+id/tv_lingjian_seller"
+        android:text="销售时间:xxx"
+        android:textSize="@dimen/word16"
+        />
+
+</RelativeLayout>

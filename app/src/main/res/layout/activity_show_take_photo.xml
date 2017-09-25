@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <include
+        layout="@layout/common_title_bar"/>
+    <LinearLayout
+        android:id="@+id/layout_bottom_control"
+        style="@style/WidthFullStyle"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/padding10">
+        <TextView
+            android:id="@+id/tv_take_photo_again"
+            style="@style/EnsureBtnStyle"
+            android:layout_marginRight="@dimen/margin5"
+            android:text="重新拍照" />
+
+        <TextView
+            android:id="@+id/tv_submit_photo"
+            style="@style/EnsureBtnStyle"
+            android:layout_marginLeft="@dimen/margin5"
+            android:text="上传照片" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/iv_show_take_photo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/titlebar"
+        android:layout_above="@+id/layout_bottom_control"
+        android:layout_gravity="center"
+        android:scaleType="centerInside"
+        android:visibility="visible"
+        android:src="@drawable/default_pic_big"
+        />
+</RelativeLayout>

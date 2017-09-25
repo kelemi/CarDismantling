@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/NormalStyle"
+    android:padding="@dimen/padding5">
+
+    <ImageView
+        android:id="@+id/iv_pic"
+        style="@style/NormalStyle"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ico_default" />
+    <ImageView
+        android:id="@+id/iv_delete"
+        style="@style/NormalStyle"
+        android:layout_alignRight="@+id/iv_pic"
+        android:layout_alignTop="@+id/iv_pic"
+        android:src="@drawable/ico_delete_green_small"
+        />
+</RelativeLayout>

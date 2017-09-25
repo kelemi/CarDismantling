@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/grayqing"
+              android:orientation="vertical"
+              xmlns:attrs="http://schemas.android.com/apk/res-auto">
+
+    <include
+        layout="@layout/common_title_bar"/>
+    <RelativeLayout
+        android:id="@+id/bannerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/white">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_lingjian_pic"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="@dimen/margin5"
+            android:layout_marginLeft="@dimen/margin5"
+            android:layout_marginRight="@dimen/margin5"/>
+
+        <!-- <com.pro.zhuifengfootball.viewpagerindicator.CirclePageIndicator
+             android:id="@+id/bannerivindicator"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:layout_alignParentRight="true"
+             android:gravity="center"/>-->
+       <!-- <com.rd.PageIndicatorView
+            android:id="@+id/indicator_lingjian_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            attrs:piv_radius="5dp"
+            attrs:piv_padding="10dp"
+            android:layout_marginBottom="10dp"
+            attrs:piv_animationType="thinWorm"
+            attrs:piv_interactiveAnimation="true"
+            attrs:piv_viewPager="@id/vp_lingjian_pic" />-->
+
+    </RelativeLayout>
+
+    <ScrollView
+        style="@style/FullStyle"
+        >
+
+        <LinearLayout
+            style="@style/WidthFullStyle"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                style="@style/WidthFullStyle"
+                android:padding="@dimen/padding10">
+
+                <TextView
+                    android:id="@+id/tag_lingjian_bianhao"
+                    style="@style/NormalStyle"
+                    android:ems="4"
+                    android:text="零件编号:"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_lingjian_bianhao"
+                    style="@style/WidthFullStyle"
+                    android:layout_marginLeft="@dimen/margin5"
+                    android:layout_toRightOf="@+id/tag_lingjian_bianhao"
+                    android:text="零件编号"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/WidthFullStyle"
+                android:padding="@dimen/padding10">
+
+                <TextView
+                    android:id="@+id/tag_lingjian_name"
+                    style="@style/NormalStyle"
+                    android:ems="4"
+                    android:text="零件名称:"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_lingjian_name"
+                    style="@style/WidthFullStyle"
+                    android:layout_marginLeft="@dimen/margin5"
+                    android:layout_toRightOf="@+id/tag_lingjian_name"
+                    android:text="零件名称:"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/WidthFullStyle"
+                android:padding="@dimen/padding10">
+
+                <TextView
+                    android:id="@+id/tag_source_car_brand"
+                    style="@style/NormalStyle"
+                    android:text="来源车品牌:"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_source_car_brand"
+                    style="@style/WidthFullStyle"
+                    android:layout_marginLeft="@dimen/margin5"
+                    android:layout_toRightOf="@+id/tag_source_car_brand"
+                    android:text=""
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/WidthFullStyle"
+                android:padding="@dimen/padding10">
+
+                <TextView
+                    android:id="@+id/tag_source_car_type"
+                    style="@style/NormalStyle"
+                    android:text="来源车型:"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_source_car_type"
+                    style="@style/WidthFullStyle"
+                    android:layout_marginLeft="@dimen/margin5"
+                    android:layout_toRightOf="@+id/tag_source_car_type"
+                    android:text="来源车型"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/WidthFullStyle"
+                android:padding="@dimen/padding10">
+
+                <TextView
+                    android:id="@+id/tag_pailiang"
+                    style="@style/NormalStyle"
+                    android:text="排量:"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_pailiang"
+                    style="@style/WidthFullStyle"
+                    android:layout_marginLeft="@dimen/margin5"
+                    android:layout_toRightOf="@+id/tag_pailiang"
+                    android:text="排量"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/WidthFullStyle"
+                android:padding="@dimen/padding10">
+
+                <TextView
+                    android:id="@+id/tag_weight"
+                    style="@style/NormalStyle"
+                    android:text="重量:"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_weight"
+                    style="@style/WidthFullStyle"
+                    android:layout_marginLeft="@dimen/margin5"
+                    android:layout_toRightOf="@+id/tag_weight"
+                    android:text="重量"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/WidthFullStyle"
+                android:padding="@dimen/padding10">
+
+                <TextView
+                    android:id="@+id/tag_color"
+                    style="@style/NormalStyle"
+                    android:text="颜色:"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_color"
+                    style="@style/WidthFullStyle"
+                    android:layout_marginLeft="@dimen/margin5"
+                    android:layout_toRightOf="@+id/tag_color"
+                    android:text="颜色"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_goods_place"
+                style="@style/WidthFullStyle"
+                android:padding="@dimen/padding10">
+
+                <TextView
+                    android:id="@+id/tag_goods_place"
+                    style="@style/NormalStyle"
+                    android:text="货物位置:"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_goods_place"
+                    style="@style/WidthFullStyle"
+                    android:layout_marginLeft="@dimen/margin5"
+                    android:layout_toRightOf="@+id/tag_goods_place"
+                    android:text="货物位置"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/WidthFullStyle"
+                android:padding="@dimen/padding10">
+
+                <TextView
+                    android:id="@+id/tag_productive_year"
+                    style="@style/NormalStyle"
+                    android:text="生产年份:"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_productive_year"
+                    style="@style/WidthFullStyle"
+                    android:layout_marginLeft="@dimen/margin5"
+                    android:layout_toRightOf="@+id/tag_productive_year"
+                    android:text="生产年份"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/WidthFullStyle"
+                android:padding="@dimen/padding10">
+
+                <TextView
+                    android:id="@+id/tag_presale_price"
+                    style="@style/NormalStyle"
+                    android:text="预售价:"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_presale_price"
+                    style="@style/WidthFullStyle"
+                    android:layout_marginLeft="@dimen/margin5"
+                    android:layout_toRightOf="@+id/tag_presale_price"
+                    android:text="预售价"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/WidthFullStyle"
+                android:layout_marginTop="1dp"
+                android:padding="@dimen/padding10">
+
+                <TextView
+                    android:id="@+id/tag_from_car_num"
+                    style="@style/NormalStyle"
+                    android:ems="4"
+                    android:text="来源车辆:"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_from_car_num"
+                    style="@style/WidthFullStyle"
+                    android:layout_marginLeft="@dimen/margin5"
+                    android:layout_toRightOf="@+id/tag_from_car_num"
+                    android:text="来源车辆:"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/WidthFullStyle"
+                android:layout_marginTop="1dp"
+                android:padding="@dimen/padding10">
+
+                <TextView
+                    android:id="@+id/tv_tag_chaijie_time"
+                    style="@style/NormalStyle"
+                    android:ems="4"
+                    android:text="拆解时间:"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_chaijie_time"
+                    style="@style/WidthFullStyle"
+                    android:layout_marginLeft="@dimen/margin5"
+                    android:layout_toRightOf="@+id/tv_tag_chaijie_time"
+                    android:text="拆解时间"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/WidthFullStyle"
+                android:layout_marginTop="1dp"
+                android:padding="@dimen/padding10">
+
+                <TextView
+                    android:id="@+id/tv_tag_chaijie_worker"
+                    style="@style/NormalStyle"
+                    android:ems="4"
+                    android:text="拆解人:"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_chaijie_worker"
+                    style="@style/WidthFullStyle"
+                    android:layout_marginLeft="@dimen/margin5"
+                    android:layout_toRightOf="@+id/tv_tag_chaijie_worker"
+                    android:text="拆解人"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

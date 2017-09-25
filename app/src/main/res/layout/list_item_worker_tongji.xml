@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding10"
+    android:background="@color/white">
+    <TextView
+        android:id="@+id/tv_worker_name"
+        style="@style/NormalStyle"
+        android:text="工人姓名"
+        android:textSize="@dimen/word16"
+        android:textColor="@color/gray"/>
+    <TextView
+        android:id="@+id/tv_telno"
+        style="@style/WidthFullStyle"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_marginLeft="@dimen/margin10"
+        android:layout_toRightOf="@+id/tv_worker_name"
+        android:gravity="right"
+        android:text="联系方式:xxxxxxx"
+        android:textSize="@dimen/word16"
+        android:textColor="@color/gray"/>
+    <TextView
+        android:id="@+id/tv_chaijie_num"
+        style="@style/NormalStyle"
+        android:text="拆解数量:xxxx"
+        android:layout_below="@+id/tv_worker_name"
+        android:layout_marginTop="@dimen/margin10"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/word16"
+        android:textColor="@color/color_main"/>
+</RelativeLayout>

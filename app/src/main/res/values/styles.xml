@@ -1,0 +1,151 @@
+<resources
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/color_main</item>
+        <item name="colorPrimaryDark">@color/color_main</item>
+        <item name="colorAccent">@color/color_main</item>
+        <item name="actionSheetStyle">@style/ActionSheetStyleiOS7</item>
+    </style>
+
+
+    <style name="NormalStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="WidthFullStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="HeightFullStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="FullStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="WidthWeightStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="LineWidthFullStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+    </style>
+
+
+
+
+    <!--首页tab的style-->
+    <style name="HomeTabButtonStyle">
+        <item name="android:gravity">center_horizontal|bottom</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:textColor">@drawable/selector_home_bottom_tab_word</item>
+        <item name="android:textSize">@dimen/word12</item>
+    </style>
+
+    <!--汽车拆解界面总成rb的style-->
+    <style name="CarAnalysisZongChengRbStyle" parent="WidthWeightStyle">
+        <item name="android:padding">@dimen/padding5</item>
+        <item name="android:background">@drawable/selector_line_green_gray</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawablePadding">@dimen/padding5</item>
+        <item name="android:textColor">@drawable/selector_home_bottom_tab_word</item>
+        <item name="android:textSize">@dimen/word14</item>
+    </style>
+
+    <!--确认按钮样式-->
+    <style name="EnsureBtnStyle" parent="WidthWeightStyle">
+        <item name="android:padding">@dimen/padding10</item>
+        <item name="android:background">@drawable/shape_rect_corner_green_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/white</item>
+        <item name="android:textSize">@dimen/word14</item>
+    </style>
+
+    <!--TipDialogTheme-->
+    <style name="TipDialogTheme" parent="@android:style/Theme.Holo.Light.Dialog.NoActionBar">
+    </style>
+
+    <!--密码et的style-->
+    <style name="PassWordEtStyle" parent="@style/WidthFullStyle">
+        <item name="android:inputType">textPassword</item>
+        <item name="android:background">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">@dimen/word16</item>
+
+    </style>
+
+    <style name="CustomProgressDialog" parent="@style/CustomDialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+
+    <style name="PersonalCenterTvStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:clickable">true</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingTop">@dimen/padding10</item>
+        <item name="android:paddingBottom">@dimen/padding10</item>
+        <item name="android:drawablePadding">15dp</item>
+        <item name="android:textSize">@dimen/word14</item>
+        <item name="android:textColor">@color/graydark</item>
+        <item name="android:background">@drawable/selector_back_white_gray</item>
+    </style>
+
+    <style name="WeightRaidBtn">
+        <item name="android:gravity">center</item>
+        <!--<item name="android:paddingBottom">@dimen/padding10</item>
+        <item name="android:paddingTop">@dimen/padding10</item>-->
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:textColor">@drawable/selector_home_bottom_tab_word</item>
+        <item name="android:textSize">@dimen/word14</item>
+    </style>
+
+    <style name="LineSmallVerticalStyle">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_height">30dp</item>
+    </style>
+
+    <style name="LineGreenSmallVerticalStyle" parent="LineSmallVerticalStyle">
+        <item name="android:layout_width">2dp</item>
+        <item name="android:background">@color/color_main</item>
+    </style>
+
+
+
+</resources>

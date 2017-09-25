@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_todo_job_kind"
+    style="@style/WidthFullStyle"
+    android:gravity="center_vertical"
+    android:drawablePadding="@dimen/padding10"
+    android:background="@drawable/selector_back_white_gray"
+    android:drawableRight="@drawable/ico_back_right_black"
+    android:padding="@dimen/padding10"
+    android:textColor="@color/gray"
+    android:text="工作任务类型"
+    android:textSize="@dimen/word20">
+
+</TextView>

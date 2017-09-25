@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <include layout="@layout/common_title_bar" />
+
+    <RadioGroup
+        android:id="@+id/rg_part_analysisstate_choose"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/titlebar"
+        android:background="@color/white">
+        <RadioButton
+            android:id="@+id/rb_has_analysis_part"
+            style="@style/WeightRaidBtn"
+
+            android:checked="true"
+            android:background="@drawable/selector_line_bottom_green_gray"
+            android:text="已分析零件"/>
+        <View
+            style="@style/LineGreenSmallVerticalStyle"
+            />
+        <RadioButton
+            android:id="@+id/rb_not_analysis_part"
+            style="@style/WeightRaidBtn"
+            android:background="@drawable/selector_line_bottom_green_gray"
+            android:text="未分析零件"/>
+
+
+    </RadioGroup>
+    <com.aofan.cardismantling.widget.NoSlideViewPager
+        android:id="@+id/vp"
+        style="@style/FullStyle"
+        android:layout_below="@+id/rg_part_analysisstate_choose"
+
+        />
+
+</RelativeLayout>

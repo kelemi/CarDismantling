@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\androidProject2\\CarDismantling\\vLCardScanSDKCaller\\build\\intermediates\\res\\merged\\debug\\drawable\\check_box_bg.xml",
+        "source": "D:\\androidProject2\\CarDismantling\\vLCardScanSDKCaller\\src\\main\\res\\drawable\\check_box_bg.xml"
+    },
+    {
+        "merged": "D:\\androidProject2\\CarDismantling\\vLCardScanSDKCaller\\build\\intermediates\\res\\merged\\debug\\drawable\\image_bg.xml",
+        "source": "D:\\androidProject2\\CarDismantling\\vLCardScanSDKCaller\\src\\main\\res\\drawable\\image_bg.xml"
+    },
+    {
+        "merged": "D:\\androidProject2\\CarDismantling\\vLCardScanSDKCaller\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_bg.xml",
+        "source": "D:\\androidProject2\\CarDismantling\\vLCardScanSDKCaller\\src\\main\\res\\drawable\\btn_bg.xml"
+    }
+]

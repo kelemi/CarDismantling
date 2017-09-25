@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding10"
+    android:gravity="center_vertical"
+    android:background="@color/white">
+    <ImageView
+        android:id="@+id/iv_car_brand_pic"
+        android:layout_centerVertical="true"
+        style="@style/NormalStyle"
+        android:src="@drawable/ico_default_car"/>
+    <TextView
+        android:id="@+id/tv_car_num"
+        style="@style/NormalStyle"
+        android:layout_centerVertical="true"
+
+        android:layout_toRightOf="@+id/iv_car_brand_pic"
+        android:layout_marginLeft="@dimen/margin20"
+        android:text="汽车牌照"
+        android:textSize="@dimen/word16"
+        android:textColor="@color/color_main"/>
+
+    <ImageView
+        android:id="@+id/iv_link"
+        style="@style/NormalStyle"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="right|center_vertical"
+        android:src="@drawable/ico_back_right_black"
+        />
+
+
+    <LinearLayout
+        style="@style/NormalStyle"
+        android:layout_centerVertical="true"
+
+        android:layout_toLeftOf="@+id/iv_link"
+        android:layout_marginRight="@dimen/margin20"
+
+        android:gravity="center_vertical|right"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_car_brand"
+            style="@style/NormalStyle"
+            android:textColor="@color/gray"
+            android:text="汽车品牌"
+            android:textSize="@dimen/word14"
+            />
+        <TextView
+            android:id="@+id/tv_car_chaijie_way"
+            style="@style/NormalStyle"
+            android:layout_marginTop="@dimen/margin10"
+            android:textColor="@color/gray"
+            android:text="拆解方式"
+            android:textSize="@dimen/word14"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

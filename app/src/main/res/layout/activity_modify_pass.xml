@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grayqing">
+    <include
+        layout="@layout/common_title_bar"/>
+    <LinearLayout
+        style="@style/WidthFullStyle"
+        android:padding="@dimen/padding10"
+        android:layout_marginTop="@dimen/margin10"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_tag_old_pass"
+            style="@style/NormalStyle"
+            android:text="旧密码"
+            android:textSize="@dimen/word16"
+            android:textColor="@color/graydark"/>
+        <EditText
+            android:id="@+id/et_old_pass"
+            style="@style/PassWordEtStyle"
+            android:hint="请输入旧密码"
+            android:layout_marginLeft="@dimen/margin10"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/WidthFullStyle"
+        android:padding="@dimen/padding10"
+        android:layout_marginTop="@dimen/margin1"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <TextView
+
+            style="@style/NormalStyle"
+            android:text="新密码"
+            android:textSize="@dimen/word16"
+            android:textColor="@color/graydark"/>
+        <EditText
+            android:id="@+id/et_new_pass"
+            style="@style/PassWordEtStyle"
+            android:hint="请输入新密码"
+            android:layout_marginLeft="@dimen/margin10"/>
+
+    </LinearLayout>
+    <LinearLayout
+        style="@style/WidthFullStyle"
+        android:padding="@dimen/padding10"
+        android:layout_marginTop="@dimen/margin1"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <TextView
+
+            style="@style/NormalStyle"
+            android:text="确认新密码"
+            android:textSize="@dimen/word16"
+            android:textColor="@color/graydark"/>
+        <EditText
+            android:id="@+id/et_new_pass_again"
+            style="@style/PassWordEtStyle"
+            android:hint="请再次输入新密码"
+            android:layout_marginLeft="@dimen/margin10"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_submit"
+        style="@style/WidthFullStyle"
+        android:padding="@dimen/padding10"
+        android:layout_margin="@dimen/margin10"
+        android:background="@drawable/shape_rect_corner_green_bg"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/word18"
+        android:text="确定"/>
+</LinearLayout>

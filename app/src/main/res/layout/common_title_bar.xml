@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/titlebar"
+                android:layout_width="match_parent"
+                android:background="@color/color_main"
+                android:layout_height="?attr/actionBarSize">
+<ImageView
+    android:id="@+id/iv_left_back"
+    style="@style/NormalStyle"
+    android:layout_alignParentLeft="true"
+    android:layout_centerVertical="true"
+    android:src="@drawable/ico_back_white"
+    android:padding="@dimen/padding10"
+    android:drawablePadding="@dimen/padding5"
+    android:visibility="gone"
+    />
+<TextView
+    android:id="@+id/tv_title"
+    style="@style/NormalStyle"
+    android:layout_centerInParent="true"
+    android:padding="@dimen/padding10"
+    android:text="title"
+    android:textSize="@dimen/word20"
+    android:textColor="@color/white"
+    android:visibility="visible"/>
+<!--最右边的iv-->
+<TextView
+    android:id="@+id/tv_right"
+    style="@style/NormalStyle"
+    android:layout_alignParentRight="true"
+    android:padding="@dimen/padding10"
+    android:textSize="@dimen/word16"
+    android:textColor="@color/white"
+    android:layout_centerVertical="true"
+    android:visibility="gone"/>
+<!-- 最右边的iv-->
+<ImageView
+    android:id="@+id/iv_right"
+    style="@style/NormalStyle"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:padding="@dimen/padding10"
+    android:visibility="gone"/>
+
+</RelativeLayout>

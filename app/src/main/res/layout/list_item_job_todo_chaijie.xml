@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="@dimen/padding10">
+    <ImageView
+        android:id="@+id/iv_link"
+        style="@style/NormalStyle"
+        android:src="@drawable/ico_back_right_black"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/tv_car_num"
+        style="@style/NormalStyle"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/tv_job_state"
+        android:layout_marginRight="@dimen/margin10"
+        android:textSize="@dimen/word16"
+        android:textColor="@color/color_main"
+        android:text="车辆编号"/>
+    <TextView
+        android:id="@+id/tv_paigong_time"
+        style="@style/NormalStyle"
+        android:gravity="right"
+        android:layout_toLeftOf="@+id/iv_link"
+        android:layout_marginRight="@dimen/margin5"
+        android:layout_toRightOf="@+id/tv_car_num"
+        android:layout_marginLeft="@dimen/margin5"
+        android:textSize="@dimen/word16"
+        android:textColor="@color/gray"
+        android:text="派工时间:xxxx"
+        android:visibility="visible"/>
+    <TextView
+        android:id="@+id/tv_chaijie_workers"
+        style="@style/NormalStyle"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_car_num"
+        android:layout_marginTop="@dimen/margin10"
+        android:layout_toLeftOf="@+id/iv_link"
+        android:layout_marginRight="@dimen/margin10"
+        android:textSize="@dimen/word16"
+        android:textColor="@color/gray"
+        android:text="拆解人员"/>
+
+    <TextView
+        android:id="@+id/tv_chaijie_way"
+        style="@style/WidthFullStyle"
+        android:layout_below="@+id/tv_chaijie_workers"
+        android:layout_toLeftOf="@+id/iv_link"
+        android:layout_marginRight="@dimen/margin5"
+        android:layout_marginTop="@dimen/margin10"
+        android:textSize="@dimen/word16"
+        android:textColor="@color/red2"
+        android:text="拆解方式"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/tv_tag_lingjian_to_chaijie"
+        style="@style/NormalStyle"
+        android:layout_below="@+id/tv_chaijie_way"
+        android:layout_marginTop="@dimen/margin10"
+        android:layout_alignParentLeft="true"
+        android:textSize="@dimen/word16"
+        android:textColor="@color/gray"
+        android:text="待拆零件:"
+        android:ellipsize="end"/>
+
+    <TextView
+        android:id="@+id/tv_lingjian_to_chaijie"
+        style="@style/WidthFullStyle"
+        android:layout_below="@+id/tv_chaijie_way"
+        android:layout_toLeftOf="@+id/iv_link"
+        android:layout_marginRight="@dimen/margin5"
+        android:layout_toRightOf="@+id/tv_tag_lingjian_to_chaijie"
+        android:layout_marginLeft="@dimen/margin10"
+        android:layout_marginTop="@dimen/margin10"
+        android:textSize="@dimen/word16"
+        android:textColor="@color/gray"
+        android:text="拆解零件信息"
+        />
+
+</RelativeLayout>

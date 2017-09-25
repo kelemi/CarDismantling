@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="@dimen/padding10">
+    <TextView
+        android:id="@+id/tv_carnum"
+        style="@style/NormalStyle"
+        android:text="汽车牌照"
+        android:textColor="@color/color_main"/>
+
+    <TextView
+        android:id="@+id/tv_car_kind"
+        style="@style/NormalStyle"
+        android:text="汽车类型"
+        android:layout_below="@+id/tv_carnum"
+        android:layout_marginTop="@dimen/margin5"/>
+
+    <TextView
+        android:id="@+id/tv_car_brand"
+        style="@style/WidthFullStyle"
+        android:text="汽车品牌"
+        android:gravity="right"
+        android:layout_below="@+id/tv_carnum"
+        android:layout_marginTop="@dimen/margin5"
+        android:layout_toRightOf="@+id/tv_car_kind"
+        />
+
+</RelativeLayout>

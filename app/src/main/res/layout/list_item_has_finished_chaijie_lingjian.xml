@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/padding10"
+    >
+
+
+    <RelativeLayout
+
+        style="@style/WidthFullStyle"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/margin5"
+        >
+
+        <TextView
+            android:id="@+id/tv_lingjian_name"
+            style="@style/NormalStyle"
+            android:layout_centerVertical="true"
+            android:text="零件名称名称名称"
+
+            android:ems="7"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/word14" />
+        <TextView
+            android:id="@+id/tv_lingjian_num"
+            style="@style/NormalStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:ems="2"
+            android:text="1"
+            android:textSize="@dimen/word14"
+            android:background="@drawable/shape_rect_black_line"
+            />
+
+        <TextView
+            android:id="@+id/tv_tag_lingjian_num"
+            style="@style/NormalStyle"
+            android:text="数量:"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_lingjian_num"
+            android:layout_marginRight="@dimen/margin10"/>
+
+
+    </RelativeLayout>
+
+    <com.aofan.cardismantling.widget.GridViewForScrollView
+        android:id="@+id/gv_lingjian_pic"
+        style="@style/WidthFullStyle"
+        android:layout_marginBottom="@dimen/margin5"
+        android:numColumns="4"
+        android:verticalSpacing="@dimen/margin5" />
+
+
+</LinearLayout>

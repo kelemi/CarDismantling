@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grayqing">
+    <include
+        layout="@layout/common_title_bar"/>
+
+    <LinearLayout
+        android:id="@+id/layout_bottom_control"
+        style="@style/WidthFullStyle"
+        android:padding="@dimen/margin10"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:id="@+id/tv_finished_paidan"
+            style="@style/EnsureBtnStyle"
+            android:layout_marginRight="@dimen/margin5"
+            android:text="完成派单"/>
+        <TextView
+            android:id="@+id/tv_add_new_paidan"
+            style="@style/EnsureBtnStyle"
+            android:layout_marginLeft="@dimen/margin5"
+            android:background="@drawable/shape_rect_corner_yellow_bg"
+            android:text="继续派单"/>
+
+        <TextView
+            android:id="@+id/tv_car_complete_chaijie"
+            style="@style/EnsureBtnStyle"
+            android:layout_marginRight="@dimen/margin5"
+            android:onClick="submitCarFinishChaiJie()"
+            android:text="确定该车完成拆解"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_top_bar"
+        style="@style/WidthFullStyle"
+        android:orientation="vertical"
+        android:layout_below="@+id/titlebar"
+        android:background="@color/color_main"
+        android:padding="@dimen/padding10"
+        android:gravity="center_horizontal">
+        <ImageView
+            android:id="@+id/iv_car_brand_pic"
+            style="@style/NormalStyle"
+            android:src="@drawable/ico_default_car_white"/>
+        <TextView
+            android:id="@+id/tv_car_num"
+            style="@style/WidthFullStyle"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/margin10"
+            android:textColor="@color/white"
+            android:text="汽车车牌号"
+            android:textSize="@dimen/word20"
+            />
+    </LinearLayout>
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/layout_top_bar"
+        android:layout_above="@+id/layout_bottom_control"
+        android:divider="@color/grayqing"
+        android:dividerHeight="@dimen/margin5">
+
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+    <RelativeLayout
+        android:id="@+id/emptylayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_top_bar"
+        android:layout_above="@+id/layout_bottom_control"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/emptytiptv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+
+            android:text="@string/tip_not_get_data_and_pull"
+            android:textSize="@dimen/word20" />
+    </RelativeLayout>
+</RelativeLayout>

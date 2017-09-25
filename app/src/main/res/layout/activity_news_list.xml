@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:padding="10dp"
+        android:text="新闻列表"/>
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lv_news"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/tv_title"
+        android:divider="#000000"
+        android:dividerHeight="1px"
+        />
+    <RelativeLayout
+        android:id="@+id/emptylayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_title"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/emptytiptv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/tip_not_get_data_and_pull"
+            android:textSize="@dimen/word20" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

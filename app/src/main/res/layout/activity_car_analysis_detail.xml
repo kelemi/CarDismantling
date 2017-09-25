@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/grayqing"
+              android:orientation="vertical">
+
+    <include
+        layout="@layout/common_title_bar"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_car_info"
+        style="@style/WidthFullStyle"
+        android:background="@color/color_main"
+        android:padding="@dimen/padding10">
+
+        <TextView
+            android:id="@+id/tv_car_brand"
+            style="@style/NormalStyle"
+            android:text="汽车品牌"
+            android:textColor="@color/white"
+            android:textSize="@dimen/word16"
+            />
+
+        <TextView
+            android:id="@+id/tv_car_kind"
+            style="@style/WidthFullStyle"
+            android:layout_toRightOf="@+id/tv_car_brand"
+            android:gravity="right"
+            android:text="汽车类型"
+            android:textColor="@color/white"
+            android:textSize="@dimen/word16"
+            />
+
+        <TextView
+            android:id="@+id/tv_car_register_time"
+            style="@style/WidthFullStyle"
+            android:layout_below="@+id/tv_car_brand"
+            android:layout_marginTop="@dimen/margin10"
+            android:text="注册时间:xxxxxxxx"
+            android:textColor="@color/white"
+            android:textSize="@dimen/word16"
+            />
+
+        <ImageView
+            android:id="@+id/iv_car_brand_pic"
+            style="@style/NormalStyle"
+            android:layout_below="@+id/tv_car_register_time"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin10"
+            android:src="@drawable/ico_car_default_mid_white"/>
+
+        <TextView
+            android:id="@+id/tv_car_num"
+            style="@style/WidthFullStyle"
+            android:layout_below="@+id/iv_car_brand_pic"
+            android:layout_marginTop="@dimen/margin10"
+            android:gravity="center"
+            android:text="汽车车牌号"
+            android:textColor="@color/white"
+            android:textSize="@dimen/word20"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/WidthFullStyle"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding10">
+
+        <TextView
+            style="@style/NormalStyle"
+            android:text="拆解建议:"
+            android:textColor="@color/color_main"/>
+
+        <TextView
+            android:id="@+id/tv_feiqiwu_choose"
+            style="@style/NormalStyle"
+            android:drawableLeft="@drawable/ico_choosed_green"
+            android:drawablePadding="@dimen/padding5"
+            android:text="危险废弃物"
+            android:textColor="@color/word_gray"
+            android:textSize="@dimen/word16"/>
+        <TextView
+            android:id="@+id/tv_jingchai_choose"
+            style="@style/NormalStyle"
+            android:layout_marginLeft="@dimen/margin10"
+            android:drawableLeft="@drawable/ico_not_choosed_black"
+            android:drawablePadding="@dimen/padding5"
+            android:text="精拆"
+            android:textColor="@color/word_gray"
+            android:textSize="@dimen/word16"/>
+
+        <TextView
+            android:id="@+id/tv_cuchai_choose"
+            style="@style/NormalStyle"
+            android:layout_marginLeft="@dimen/margin10"
+            android:drawableLeft="@drawable/ico_not_choosed_black"
+            android:drawablePadding="@dimen/padding5"
+            android:text="粗拆"
+            android:textColor="@color/word_gray"
+            android:textSize="@dimen/word16"/>
+        <!--<CheckBox
+            android:id="@+id/cb_jingchai_choose"
+            style="@style/NormalStyle"
+            android:layout_marginLeft="@dimen/margin10"
+            android:button="@null"
+            android:drawableLeft="@drawable/selector_rb_choose_green_black"
+            android:drawablePadding="@dimen/padding5"
+            android:text="精拆"
+            android:textColor="@color/word_gray"
+            android:textSize="@dimen/word16"/>&ndash;&gt;-->
+
+        <!--<CheckBox
+            android:id="@+id/cb_cuchai_choose"
+            style="@style/NormalStyle"
+            android:layout_marginLeft="@dimen/margin10"
+            android:button="@null"
+            android:drawableLeft="@drawable/selector_rb_choose_green_black"
+            android:drawablePadding="@dimen/padding5"
+            android:text="粗拆"
+            android:textColor="@color/word_gray"
+            android:textSize="@dimen/word16"/>-->
+
+        <!--<RadioGroup
+            android:id="@+id/rg_choose_chaijie_way"
+            style="@style/WidthFullStyle"
+            android:layout_marginLeft="@dimen/margin10"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_jingchai"
+                style="@style/WidthWeightStyle"
+                android:button="@null"
+                android:drawableLeft="@drawable/selector_rb_choose_green_black"
+                android:drawablePadding="@dimen/padding5"
+                android:text="精拆"
+                android:textColor="@color/word_gray"
+                android:textSize="@dimen/word16"/>
+
+            <RadioButton
+                android:id="@+id/rb_cuchai"
+                style="@style/WidthWeightStyle"
+                android:button="@null"
+                android:drawableLeft="@drawable/selector_rb_choose_green_black"
+                android:drawablePadding="@dimen/padding5"
+                android:text="粗拆"
+                android:textColor="@color/word_gray"
+                android:textSize="@dimen/word16"/>
+        </RadioGroup>-->
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/sc_feiqiwu_lingjianchoose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/layout_feiqiwu_liangjianchoose"
+            style="@style/FullStyle"
+            android:layout_marginTop="@dimen/margin5"
+            android:orientation="vertical"
+            >
+
+            <TextView
+
+                style="@style/WidthFullStyle"
+                android:layout_margin="@dimen/margin5"
+                android:text="需要拆解的废弃物"
+                android:textColor="@color/graydark"/>
+
+            <com.aofan.cardismantling.widget.GridViewForScrollView
+                android:id="@+id/gv_need_chaijie_dianchi_feiqiwu"
+                style="@style/WidthFullStyle"
+                android:horizontalSpacing="1dp"
+                android:numColumns="2"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="1dp"/>
+
+            <com.aofan.cardismantling.widget.GridViewForScrollView
+                android:id="@+id/gv_need_chaijie_other_feiqiwu"
+                style="@style/WidthFullStyle"
+                android:layout_marginTop="1dp"
+                android:horizontalSpacing="1dp"
+                android:numColumns="2"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="1dp"/>
+
+            <TextView
+
+                style="@style/WidthFullStyle"
+                android:layout_margin="@dimen/margin5"
+                android:text="缺失的废弃物"
+                android:textColor="@color/graydark"/>
+
+            <com.aofan.cardismantling.widget.GridViewForScrollView
+                android:id="@+id/gv_queshi_dianchi_feiqiwu"
+                style="@style/WidthFullStyle"
+                android:horizontalSpacing="1dp"
+                android:numColumns="2"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="1dp"/>
+
+            <com.aofan.cardismantling.widget.GridViewForScrollView
+                android:id="@+id/gv_queshi_other_feiqiwu"
+                style="@style/WidthFullStyle"
+                android:layout_marginTop="1dp"
+                android:horizontalSpacing="1dp"
+                android:numColumns="2"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="1dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/layout_jingcai_car_lingjian_choose"
+        style="@style/FullStyle"
+        android:layout_marginTop="@dimen/margin5"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+        <!-- <TextView
+             style="@style/WidthFullStyle"
+             android:text="请选择需要拆解的零件:"
+             android:padding="@dimen/padding10"/>-->
+        <RadioGroup
+            android:id="@+id/rg_component_choose"
+            style="@style/WidthFullStyle"
+
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_fadongji_component"
+                style="@style/CarAnalysisZongChengRbStyle"
+                android:checked="true"
+
+                android:drawableTop="@drawable/ico_fadongji_component"
+                android:text="发动机总成"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_dipan_component"
+                style="@style/CarAnalysisZongChengRbStyle"
+                android:drawableTop="@drawable/ico_dipan_component"
+                android:text="底盘总成"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_jiashishi_component"
+                style="@style/CarAnalysisZongChengRbStyle"
+                android:drawableTop="@drawable/ico_jiashishi_component"
+                android:text="驾驶室总成"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_chexiang_component"
+                style="@style/CarAnalysisZongChengRbStyle"
+                android:drawableTop="@drawable/ico_chexiang_component"
+                android:text="车箱总成"/>
+
+        </RadioGroup>
+
+        <GridView
+            android:id="@+id/gv_component_detail"
+            style="@style/FullStyle"
+            android:horizontalSpacing="1dp"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="1dp"></GridView>
+    </LinearLayout>
+
+</LinearLayout>

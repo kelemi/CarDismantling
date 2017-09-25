@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <include layout="@layout/common_title_bar" />
+
+    <LinearLayout
+        android:id="@+id/layout_submit"
+        style="@style/WidthFullStyle"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:padding="@dimen/padding5">
+
+        <TextView
+            android:id="@+id/tv_submit"
+            style="@style/WidthFullStyle"
+            android:background="@drawable/shape_rect_corner_green_bg"
+            android:gravity="center"
+            android:padding="@dimen/padding10"
+            android:text="提交"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <ScrollView
+        style="@style/FullStyle"
+        android:layout_above="@+id/layout_submit"
+        android:layout_below="@+id/titlebar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grayqing"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                style="@style/WidthFullStyle"
+                android:background="@color/color_main"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="@dimen/padding10">
+
+                <ImageView
+                    android:id="@+id/iv_car_brand_pic"
+                    style="@style/NormalStyle"
+                    android:src="@drawable/ico_default_car_white" />
+
+                <TextView
+                    android:id="@+id/tv_car_num"
+                    style="@style/WidthFullStyle"
+                    android:layout_marginTop="@dimen/margin10"
+                    android:gravity="center"
+                    android:text="汽车车牌号"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/word20" />
+            </LinearLayout>
+            <!--<LinearLayout
+                style="@style/WidthFullStyle"
+                android:padding="@dimen/padding10"
+                android:orientation="vertical"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    style="@style/WidthFullStyle"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_tag_to_choose_lingjian"
+                        style="@style/NormalStyle"
+                        android:layout_centerVertical="true"
+                        android:text="选择需要拆解的部件"
+                        android:textColor="@color/color_main" />
+
+                    <TextView
+                        android:id="@+id/tv_choose_lingjian"
+                        style="@style/NormalStyle"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/shape_rect_corner_green_bg"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/padding5"
+                        android:paddingLeft="@dimen/padding20"
+                        android:paddingRight="@dimen/padding20"
+                        android:paddingTop="@dimen/padding5"
+                        android:text="选择"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/word14" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_choosed_lingjian"
+                    style="@style/WidthFullStyle"
+                    android:layout_marginTop="@dimen/margin10"
+                    android:background="@drawable/shape_rect_white_bg_black_line"
+                    android:padding="@dimen/padding10" />
+            </LinearLayout>-->
+
+            <LinearLayout
+                style="@style/WidthFullStyle"
+                android:layout_marginTop="@dimen/margin10"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/padding10">
+
+                <TextView
+                    android:id="@+id/tv_tag_to_input_request"
+                    style="@style/WidthFullStyle"
+                    android:text="拆解要求:"
+                    android:textColor="@color/color_main" />
+
+                <EditText
+                    android:id="@+id/et_chaijie_request"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="@dimen/margin10"
+                    android:gravity="left|top"
+                    android:background="@drawable/shape_rect_white_bg_black_line"
+                    android:padding="@dimen/padding10" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/WidthFullStyle"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/margin10"
+                >
+
+                <RelativeLayout
+                    style="@style/WidthFullStyle"
+                    android:background="@color/white"
+                    android:padding="@dimen/padding10">
+
+                    <TextView
+                        android:id="@+id/tv_tag_to_choose_worker"
+                        style="@style/NormalStyle"
+                        android:layout_centerVertical="true"
+                        android:text="选择拆解人员:"
+                        android:textColor="@color/color_main" />
+
+                    <TextView
+                        android:id="@+id/tv_choose_chaijie_worker"
+                        style="@style/NormalStyle"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/shape_rect_corner_green_bg"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/padding5"
+                        android:paddingLeft="@dimen/padding20"
+                        android:paddingRight="@dimen/padding20"
+                        android:paddingTop="@dimen/padding5"
+                        android:text="选择"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/word14" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_choosed_chaijie_worker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin10"
+                    android:layout_marginRight="@dimen/margin10"
+                    android:background="@drawable/shape_rect_white_bg_black_line"
+                    android:padding="@dimen/padding10" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

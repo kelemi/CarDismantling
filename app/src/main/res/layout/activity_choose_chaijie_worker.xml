@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/common_title_bar" />
+
+    <LinearLayout
+        android:id="@+id/layout_submit"
+        style="@style/WidthFullStyle"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:padding="@dimen/padding5">
+
+        <TextView
+            android:id="@+id/tv_submit"
+            style="@style/WidthFullStyle"
+            android:background="@drawable/shape_rect_corner_green_bg"
+            android:gravity="center"
+            android:padding="@dimen/padding10"
+            android:text="提交"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/lv"
+        style="@style/FullStyle"
+        android:layout_below="@+id/titlebar"
+        android:layout_above="@+id/layout_submit"
+        android:dividerHeight="1dp"
+        android:divider="@color/grayqing"/>
+
+</RelativeLayout>

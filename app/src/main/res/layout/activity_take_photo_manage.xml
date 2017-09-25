@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/grayqing">
+    <include
+        layout="@layout/common_title_bar"/>
+     <TextView
+         android:id="@+id/tv_tip"
+         style="@style/WidthFullStyle"
+         android:layout_below="@+id/titlebar"
+         android:padding="@dimen/padding10"
+         android:background="@color/white"
+         android:text="@string/tip_to_take_photo_to_record_info"
+         android:textColor="@color/red2"/>
+    <ScrollView
+        style="@style/FullStyle"
+        android:layout_below="@+id/tv_tip">
+        <LinearLayout
+            style="@style/WidthFullStyle"
+            android:orientation="vertical">
+            <LinearLayout
+                style="@style/WidthFullStyle"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    style="@style/WidthWeightStyle"
+                    android:orientation="vertical">
+                    <TextView
+
+                        style="@style/NormalStyle"
+                        android:padding="@dimen/padding5"
+                        android:text="行驶证"/>
+                    <ImageView
+                        android:id="@+id/iv_take_xingshizheng_photo"
+                        style="@style/WidthFullStyle"
+                        android:src="@drawable/bg_take_xingshizheng_photo"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/WidthWeightStyle"
+                    android:orientation="vertical">
+                    <TextView
+
+                        style="@style/NormalStyle"
+                        android:padding="@dimen/padding5"
+                        android:text="企业营业执照"/>
+                    <ImageView
+                        android:id="@+id/iv_take_business_licence_photo"
+                        style="@style/WidthFullStyle"
+                        android:src="@drawable/bg_businss_license"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                style="@style/WidthFullStyle"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    style="@style/WidthWeightStyle"
+                    android:orientation="vertical">
+                    <TextView
+
+                        style="@style/NormalStyle"
+                        android:padding="@dimen/padding5"
+                        android:text="车主身份证正面"/>
+                    <ImageView
+                        android:id="@+id/iv_take_chezhu_idcard_front_photo"
+                        style="@style/WidthFullStyle"
+                        android:src="@drawable/bg_take_idcard_front_photo"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/WidthWeightStyle"
+                    android:orientation="vertical">
+                    <TextView
+                        style="@style/NormalStyle"
+                        android:padding="@dimen/padding5"
+                        android:text="车主身份证反面"/>
+                    <ImageView
+                        android:id="@+id/iv_take_chezhu_idcard_back_photo"
+                        style="@style/WidthFullStyle"
+                        android:src="@drawable/bg_take_idcard_back_photo"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                style="@style/WidthFullStyle"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    style="@style/WidthWeightStyle"
+                    android:orientation="vertical">
+                    <TextView
+
+                        style="@style/NormalStyle"
+                        android:padding="@dimen/padding5"
+                        android:text="代理人身份证正面"/>
+                    <ImageView
+                        android:id="@+id/iv_take_dailiren_idcard_front_photo"
+                        style="@style/WidthFullStyle"
+                        android:src="@drawable/bg_take_idcard_front_photo"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/WidthWeightStyle"
+                    android:orientation="vertical">
+                    <TextView
+                        style="@style/NormalStyle"
+                        android:padding="@dimen/padding5"
+                        android:text="代理人身份证反面"/>
+                    <ImageView
+                        android:id="@+id/iv_take_dailiren_idcard_back_photo"
+                        style="@style/WidthFullStyle"
+                        android:src="@drawable/bg_take_idcard_back_photo"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                style="@style/WidthFullStyle"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    style="@style/WidthWeightStyle"
+                    android:orientation="vertical">
+                    <TextView
+
+                        style="@style/NormalStyle"
+                        android:padding="@dimen/padding5"
+                        android:text="收车人身份证正面"/>
+                    <ImageView
+                        android:id="@+id/iv_take_car_saler_idcard_front_photo"
+                        style="@style/WidthFullStyle"
+                        android:src="@drawable/bg_take_idcard_front_photo"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/WidthWeightStyle"
+                    android:orientation="vertical">
+                    <TextView
+                        style="@style/NormalStyle"
+                        android:padding="@dimen/padding5"
+                        android:text="收车人身份证反面"/>
+                    <ImageView
+                        android:id="@+id/iv_take_car_saler_idcard_back_photo"
+                        style="@style/WidthFullStyle"
+                        android:src="@drawable/bg_take_idcard_back_photo"
+                       />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/NormalStyle"
+    android:padding="@dimen/padding5">
+
+    <ImageView
+        android:id="@+id/iv_pic"
+        style="@style/NormalStyle"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ico_default" />
+</RelativeLayout>

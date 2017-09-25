@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:padding="@dimen/padding10"
+    android:background="@color/white">
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/NormalStyle"
+        android:layout_alignParentLeft="true"
+        android:text="姓名"
+        android:textColor="@color/color_main"
+        />
+
+    <TextView
+        android:id="@+id/tv_telno"
+        style="@style/NormalStyle"
+        android:drawableLeft="@drawable/ico_call_small"
+        android:drawablePadding="@dimen/padding5"
+        android:gravity="center_vertical"
+        android:layout_alignParentRight="true"
+        android:text="电话"
+        />
+</RelativeLayout>

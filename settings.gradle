@@ -1,0 +1,2 @@
+include ':app', ':galleryfinal', ':actionsheet_library', ':library_erweima'
+include ':vLCardScanSDKCaller'

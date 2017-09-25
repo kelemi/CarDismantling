@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "D:\\androidProject2\\CarDismantling\\vLCardScanSDKCaller\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_flash_on_holo_light.png",
+        "source": "D:\\androidProject2\\CarDismantling\\vLCardScanSDKCaller\\src\\main\\res\\drawable-xxhdpi\\ic_flash_on_holo_light.png"
+    },
+    {
+        "merged": "D:\\androidProject2\\CarDismantling\\vLCardScanSDKCaller\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_launcher.png",
+        "source": "D:\\androidProject2\\CarDismantling\\vLCardScanSDKCaller\\src\\main\\res\\drawable-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\androidProject2\\CarDismantling\\vLCardScanSDKCaller\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon.png",
+        "source": "D:\\androidProject2\\CarDismantling\\vLCardScanSDKCaller\\src\\main\\res\\drawable-xxhdpi\\icon.png"
+    },
+    {
+        "merged": "D:\\androidProject2\\CarDismantling\\vLCardScanSDKCaller\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_flash_off_holo_light.png",
+        "source": "D:\\androidProject2\\CarDismantling\\vLCardScanSDKCaller\\src\\main\\res\\drawable-xxhdpi\\ic_flash_off_holo_light.png"
+    },
+    {
+        "merged": "D:\\androidProject2\\CarDismantling\\vLCardScanSDKCaller\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\bg_blur.png",
+        "source": "D:\\androidProject2\\CarDismantling\\vLCardScanSDKCaller\\src\\main\\res\\drawable-xxhdpi\\bg_blur.png"
+    }
+]

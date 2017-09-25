@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grayqing">
+    <include
+        layout="@layout/common_title_bar"
+        android:id="@+id/include" />
+
+    <LinearLayout
+        style="@style/WidthFullStyle"
+        android:orientation="vertical"
+        android:background="@color/color_main"
+        android:padding="@dimen/padding10"
+        android:gravity="center_horizontal"
+       >
+        <ImageView
+            android:id="@+id/iv_headpic"
+            style="@style/NormalStyle"
+            android:src="@drawable/ico_default_head"/>
+        <TextView
+            android:id="@+id/tv_username"
+            style="@style/NormalStyle"
+            android:layout_marginTop="@dimen/margin10"
+            android:text="用户名"
+            android:textSize="@dimen/word20"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_to_colleages"
+        style="@style/WidthFullStyle"
+        android:gravity="center_vertical"
+        android:drawablePadding="@dimen/padding10"
+        android:background="@drawable/selector_back_white_gray"
+        android:drawableLeft="@drawable/ico_colleages"
+        android:drawableRight="@drawable/ico_back_right_black"
+        android:padding="@dimen/padding10"
+        android:textColor="@color/gray"
+        android:text="企业同事"
+        android:textSize="@dimen/word20"/>
+    <TextView
+        android:id="@+id/tv_to_setting"
+        style="@style/WidthFullStyle"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/selector_back_white_gray"
+        android:gravity="center_vertical"
+        android:drawablePadding="@dimen/padding10"
+        android:drawableLeft="@drawable/ico_setting"
+        android:drawableRight="@drawable/ico_back_right_black"
+        android:padding="@dimen/padding10"
+        android:textColor="@color/gray"
+        android:text="个人设置"
+        android:textSize="@dimen/word20"/>
+    <TextView
+        android:id="@+id/tv_to_version_update"
+        style="@style/WidthFullStyle"
+        android:background="@drawable/selector_back_white_gray"
+        android:layout_marginTop="1dp"
+        android:gravity="center_vertical"
+        android:drawablePadding="@dimen/padding10"
+        android:drawableLeft="@drawable/ico_version_update"
+        android:drawableRight="@drawable/ico_back_right_black"
+        android:padding="@dimen/padding10"
+        android:textColor="@color/gray"
+        android:text="版本更新"
+        android:textSize="@dimen/word20"/>
+
+    <TextView
+        android:id="@+id/tv_to_modify_pass"
+        style="@style/WidthFullStyle"
+        android:background="@drawable/selector_back_white_gray"
+        android:layout_marginTop="1dp"
+        android:gravity="center_vertical"
+        android:drawablePadding="@dimen/padding10"
+        android:drawableLeft="@drawable/ico_modify_pass"
+        android:drawableRight="@drawable/ico_back_right_black"
+        android:padding="@dimen/padding10"
+        android:textColor="@color/gray"
+        android:text="修改密码"
+        android:textSize="@dimen/word20"/>
+
+</LinearLayout>

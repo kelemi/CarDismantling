@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="word10">10sp</dimen>
+    <dimen name="word12">12sp</dimen>
+    <dimen name="word14">14sp</dimen>
+    <dimen name="word16">16sp</dimen>
+    <dimen name="word18">18sp</dimen>
+    <dimen name="word20">20sp</dimen>
+    <dimen name="word25">25sp</dimen>
+    <dimen name="word30">30sp</dimen>
+    <dimen name="word40">40sp</dimen>
+    <dimen name="word50">50sp</dimen>
+
+    margin1
+    <dimen name="margin1">1dp</dimen>
+    <dimen name="margin2">2dp</dimen>
+    <dimen name="margin5">5dp</dimen>
+    <dimen name="margin10">10dp</dimen>
+    <dimen name="margin15">15dp</dimen>
+    <dimen name="margin20">20dp</dimen>
+    <dimen name="margin25">25dp</dimen>
+
+    <dimen name="padding2">2dp</dimen>
+    <dimen name="padding5">5dp</dimen>
+    <dimen name="padding10">10dp</dimen>
+    <dimen name="padding15">15dp</dimen>
+    <dimen name="padding20">20dp</dimen>
+    <dimen name="padding25">25dp</dimen>
+
+
+    <dimen name="menu_item_pic_size">150px</dimen>
+
+</resources>

@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aofan.cardismantling">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <application
+        android:name=".app.CustomApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ico_launch"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".mvp.splash.ActivitySplash"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 登陆界面 -->
+        <activity
+            android:name=".mvp.login.ActivityLogin"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+            <!--
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN"></action>
+                 <category android:name="android.intent.category.LAUNCHER"></category>
+             </intent-filter>
+            -->
+        </activity>
+        <!-- 车辆分析列表：待分析的车辆 -->
+        <activity
+            android:name=".mvp.carwaitanalysis.ActivityCarWaitToAnalysis"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+            <!--
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN"></action>
+                 <category android:name="android.intent.category.LAUNCHER"></category>
+             </intent-filter>
+            -->
+        </activity>
+        <!-- 待分析车辆详情界面 -->
+        <activity
+            android:name=".mvp.carwaitanalysis.carwaitanalysisdetail.ActivityCarWaitAnalysisDetail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+                <category android:name="android.intent.category.LAUNCHER"></category>
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".mvp.carwaittochaijie.paigongdan.ActivityPaiGongDanMainView"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+                <category android:name="android.intent.category.LAUNCHER"></category>
+            </intent-filter>
+            -->
+        </activity>
+
+        <!-- 待拆解的车辆：未完全派单的车辆的列表 -->
+        <!--
+        <activity android:name=".mvp.carwaittochaijie.ActivityCarWaitToChaiJieList">
+            &lt;!&ndash;<intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+                <category android:name="android.intent.category.LAUNCHER"></category>
+            </intent-filter>&ndash;&gt;
+        </activity>
+        -->
+
+
+        <!-- 精拆车量的派工单列表界面 -->
+        <activity
+            android:name=".mvp.carwaittochaijie.carchaijiepaigongdanlist.ActivityOneCarChaiJiePaiGongDanList"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+                <category android:name="android.intent.category.LAUNCHER"></category>
+            </intent-filter>
+            -->
+        </activity>
+
+        <!-- 粗拆车量的派工单列表界面 -->
+        <activity
+            android:name=".mvp.carwaittochaijie.carchaijiepaigongdanlist.ActivityOneCarChaiJiePaiGongDanListForCuChai"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".mvp.carwaittochaijie.addnewpaigongdan.ActivityAddNewPaiGongDan"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+                <category android:name="android.intent.category.LAUNCHER"></category>
+            </intent-filter>
+            -->
+        </activity>
+
+        <!-- 粗拆添加派工单界面 -->
+        <activity
+            android:name=".mvp.carwaittochaijie.addnewpaigongdan.ActivityAddNewPaiGongDanForCuChai"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".mvp.carwaittochaijie.choosechaijieworker.ActivityChooseChaiJieWorker"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+            <!--
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN"></action>
+                 <category android:name="android.intent.category.LAUNCHER"></category>
+             </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".mvp.carwaittochaijie.choosechaijielingjian.ActivityChooseChaiJieLingJianNew"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+                <category android:name="android.intent.category.LAUNCHER"></category>
+            </intent-filter>
+            -->
+        </activity>
+
+        <!-- 数据统计界面 -->
+        <activity
+            android:name=".mvp.datatongji.ActivityDataTongJiHome"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+                <category android:name="android.intent.category.LAUNCHER"></category>
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".mvp.takephotostorecordinfo.ActivityTakePhotoManage"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+                <category android:name="android.intent.category.LAUNCHER"></category>
+            </intent-filter>
+            -->
+        </activity>
+
+        <!-- 拍摄行驶证结果显示界面 -->
+        <activity
+            android:name=".mvp.takephotostorecordinfo.uploadxingshizhenginfo.ActivityShowScanXingShiZhengResult"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+                <category android:name="android.intent.category.LAUNCHER"></category>
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".mvp.takephotostorecordinfo.uploadphoto.ActivityShowTakePhoto"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+            <!--
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN"></action>
+                 <category android:name="android.intent.category.LAUNCHER"></category>
+             </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".mvp.home.ActivityHome"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+                <category android:name="android.intent.category.LAUNCHER"></category>
+            </intent-filter>
+            -->
+        </activity>
+
+        <!-- 待办事项主界面 -->
+        <activity
+            android:name=".mvp.jobwaittodo.ActivityJobWaitToDoMainView"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+                <category android:name="android.intent.category.LAUNCHER"></category>
+            </intent-filter>
+            -->
+        </activity>
+
+        <!-- 待办事项派工单list界面 -->
+        <activity
+            android:name=".mvp.jobwaittodo.paigongdanjob.ActivityJobWaitToDoPaiGongDan"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+                <category android:name="android.intent.category.LAUNCHER"></category>
+            </intent-filter>
+            -->
+        </activity>
+        <!-- 待办事项拆解list界面 -->
+        <activity
+            android:name=".mvp.jobwaittodo.chaijiejob.ActivityJobWaitToDoChaiJie"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+                <category android:name="android.intent.category.LAUNCHER"></category>
+            </intent-filter>
+            -->
+        </activity>
+
+        <!-- 已办事项主界面 -->
+        <activity
+            android:name=".mvp.jobhasdo.ActivityJobHasDoMainView"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+                <category android:name="android.intent.category.LAUNCHER"></category>
+            </intent-filter>
+            -->
+        </activity>
+        <!-- 已办事项拆解list界面 -->
+        <activity
+            android:name=".mvp.jobhasdo.chaijiejob.ActivityJobHasDoChaiJie"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+                <category android:name="android.intent.category.LAUNCHER"></category>
+            </intent-filter>
+            -->
+        </activity>
+        <!-- 已完成拆解任务详情 -->
+        <activity
+            android:name=".mvp.jobhasdo.chaijiejob.detail.jingchai.ActivityJobHasDoChaiJieDetail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+                <category android:name="android.intent.category.LAUNCHER"></category>
+            </intent-filter>
+            -->
+        </activity>
+
+        <!-- 已办事项派工单list界面 -->
+        <activity
+            android:name=".mvp.jobhasdo.paigongdanjob.ActivityJobHasDoPaiGongDanListView"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+                <category android:name="android.intent.category.LAUNCHER"></category>
+            </intent-filter>
+            -->
+        </activity>
+
+        <!-- 精拆的详情界面 -->
+        <activity
+            android:name=".mvp.jobwaittodo.chaijiejob.detail.jingchai.ActivityWaitToDoChaiJieJobDetailForJingChai"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+                <category android:name="android.intent.category.LAUNCHER"></category>
+            </intent-filter>
+            -->
+        </activity>
+
+        <!-- 粗拆的待拆解任务的详情界面 -->
+        <activity
+            android:name=".mvp.jobwaittodo.chaijiejob.detail.cuchai.ActivityWaitToDoChaiJieJobDetailForCuChai"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+                <category android:name="android.intent.category.LAUNCHER"></category>
+            </intent-filter>
+            -->
+        </activity>
+
+        <!-- 图片显示vp界面 -->
+        <activity
+            android:name=".mvp.picshow.ActivityPicShow"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+                <category android:name="android.intent.category.LAUNCHER"></category>
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".mvp.chaijiehasfinisheddetail.ActivityChaiJieJobFinishedDetail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+            <!--
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN"></action>
+                 <category android:name="android.intent.category.LAUNCHER"></category>
+             </intent-filter>
+            -->
+        </activity>
+
+        <!-- 待确认派工单详情 -->
+        <activity
+            android:name=".mvp.jobwaittodo.paigongdanjob.detail.jingchai.ActivityWaitEnsurePaiGongDanDetail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+            <!--
+           <intent-filter>
+               <action android:name="android.intent.action.MAIN"></action>
+               <category android:name="android.intent.category.LAUNCHER"></category>
+           </intent-filter>
+            -->
+        </activity>
+
+        <!-- 粗拆待确认界面 -->
+        <activity
+            android:name=".mvp.jobwaittodo.paigongdanjob.detail.cuchai.ActivityWaitEnsurePaiGongDanDetailForCuChai"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+            <!--
+           <intent-filter>
+               <action android:name="android.intent.action.MAIN"></action>
+               <category android:name="android.intent.category.LAUNCHER"></category>
+           </intent-filter>
+            -->
+        </activity>
+
+        <!-- 粗拆已完成拆解详情 -->
+        <activity
+            android:name=".mvp.jobhasdo.chaijiejob.detail.cuchai.ActivityJobHasDoChaiJieDetailForCuChai"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+            <!--
+           <intent-filter>
+               <action android:name="android.intent.action.MAIN"></action>
+               <category android:name="android.intent.category.LAUNCHER"></category>
+           </intent-filter>
+            -->
+        </activity>
+
+        <!-- 粗拆已完成派工单详情 -->
+        <activity
+            android:name=".mvp.jobhasdo.paigongdanjob.detail.cuchai.ActivityHasEnsurePaiGongDanDetailForCuChai"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+            <!--
+           <intent-filter>
+               <action android:name="android.intent.action.MAIN"></action>
+               <category android:name="android.intent.category.LAUNCHER"></category>
+           </intent-filter>
+            -->
+        </activity>
+
+        <!-- 个人设置界面 -->
+        <activity
+            android:name=".mvp.personalsetting.ActivityPersonalSetting"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+            <!--
+           <intent-filter>
+               <action android:name="android.intent.action.MAIN"></action>
+               <category android:name="android.intent.category.LAUNCHER"></category>
+           </intent-filter>
+            -->
+        </activity>
+
+        <!-- 库存主界面 -->
+        <activity
+            android:name=".mvp.kucun.ActivityKuCunMainView"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+            <!--
+           <intent-filter>
+               <action android:name="android.intent.action.MAIN"></action>
+               <category android:name="android.intent.category.LAUNCHER"></category>
+           </intent-filter>
+            -->
+        </activity>
+        <!-- 汽车库存主界面 -->
+        <activity
+            android:name=".mvp.kucun.carkucun.ActivityCarKuCunMainView"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+            <!--
+           <intent-filter>
+               <action android:name="android.intent.action.MAIN"></action>
+               <category android:name="android.intent.category.LAUNCHER"></category>
+           </intent-filter>
+            -->
+        </activity>
+        <!-- 零件库存主界面 -->
+        <activity
+            android:name=".mvp.kucun.lingjiankucun.ActivityLingJianKuCunMainView"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+            <!--
+           <intent-filter>
+               <action android:name="android.intent.action.MAIN"></action>
+               <category android:name="android.intent.category.LAUNCHER"></category>
+           </intent-filter>
+            -->
+        </activity>
+        <!-- 已经确认派工单 -->
+        <activity
+            android:name=".mvp.jobhasdo.paigongdanjob.detail.ActivityHasDoPaiGongDanDetail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+            <!--
+           <intent-filter>
+               <action android:name="android.intent.action.MAIN"></action>
+               <category android:name="android.intent.category.LAUNCHER"></category>
+           </intent-filter>
+            -->
+        </activity>
+
+        <!-- 我的同事列表界面 -->
+        <activity
+            android:name=".mvp.colleagues.ActivityMyColleagues"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.intsig.vlcardscansdk.ISCardScanActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".mvp.modifypass.ActivityModifyPass"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <!-- 零件详情 -->
+        <activity
+            android:name=".mvp.lingjiandetail.ActivityShowLingJianDetail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".mvp.xingshizhengscantest.RecogResultActivity" />
+
+        <!--
+        <activity android:name=".mvp.ActivityXingShiZhengScanTest">
+             &lt;!&ndash;<intent-filter>
+                 <action android:name="android.intent.action.MAIN"></action>
+                 <category android:name="android.intent.category.LAUNCHER"></category>
+             </intent-filter>&ndash;&gt;
+        </activity>
+
+
+
+        <activity
+            android:name=".mvp.xingshizhengscantest.MainActivity">
+            &lt;!&ndash;<intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+                <category android:name="android.intent.category.LAUNCHER"></category>
+            </intent-filter>&ndash;&gt;
+        </activity>
+        <activity
+            android:name=".mvp.xingshizhengscantest.PreviewActivity">
+
+        </activity>
+
+
+
+        <meta-data
+            android:name="design_width"
+            android:value="1080"></meta-data>
+        <meta-data
+            android:name="design_height"
+            android:value="1920"></meta-data>
+        -->
+
+        <activity android:name=".mvp.jobwaittodo.weichuchejob.ActivityToWaitWeiChuCar" />
+        <activity android:name=".mvp.jobwaittodo.weichuchejob.addcar.ActivityAddWeiChuCar" />
+        <activity android:name=".mvp.jobwaittodo.weichuchejob.detail.ActivityWeiChuDetail" />
+        <activity android:name=".mvp.jobwaittodo.weichuchejob.addcomponent.ActivityAddComponent" />
+        <activity android:name=".mvp.jobwaittodo.weichuchejob.updateComponent.ActivityUpdateComponent"></activity>
+    </application>
+
+</manifest>

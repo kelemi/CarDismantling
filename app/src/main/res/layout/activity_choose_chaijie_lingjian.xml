@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/common_title_bar" />
+
+    <RadioGroup
+        android:id="@+id/rg_part_analysisstate_choose"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/titlebar"
+        android:background="@color/white">
+        <RadioButton
+            android:id="@+id/rb_has_analysis_part"
+            style="@style/WeightRaidBtn"
+
+            android:checked="true"
+            android:background="@drawable/selector_line_bottom_green_gray"
+            android:text="已分析零件"/>
+        <View
+            style="@style/LineGreenSmallVerticalStyle"
+            />
+        <RadioButton
+            android:id="@+id/rb_not_analysis_part"
+            style="@style/WeightRaidBtn"
+            android:background="@drawable/selector_line_bottom_green_gray"
+            android:text="未分析零件"/>
+
+
+    </RadioGroup>
+    <LinearLayout
+        android:id="@+id/layout_submit"
+        style="@style/WidthFullStyle"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:padding="@dimen/padding5"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_submit"
+            style="@style/WidthFullStyle"
+            android:background="@drawable/shape_rect_corner_green_bg"
+            android:gravity="center"
+            android:padding="@dimen/padding10"
+            android:text="提交"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    <ExpandableListView
+        android:id="@+id/lv_of_has_analysis_part"
+        style="@style/FullStyle"
+        android:layout_below="@+id/rg_part_analysisstate_choose"
+        android:layout_above="@+id/layout_submit"
+        android:dividerHeight="1dp"
+        android:childDivider="@color/grayqing"
+        android:divider="@color/grayqing"
+        android:visibility="gone"/>
+    <ExpandableListView
+        android:id="@+id/lv_of_not_analysis_part"
+        style="@style/FullStyle"
+        android:layout_below="@+id/rg_part_analysisstate_choose"
+        android:layout_above="@+id/layout_submit"
+        android:dividerHeight="1dp"
+        android:childDivider="@color/grayqing"
+        android:divider="@color/grayqing"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/tv_empty_tip"
+        style="@style/FullStyle"
+        android:layout_below="@+id/titlebar"
+        android:text="没有获取到相关数据"
+        android:gravity="center"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

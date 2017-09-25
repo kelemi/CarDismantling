@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:padding="@dimen/padding10"
+                android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_chajie_state"
+        style="@style/NormalStyle"
+        android:gravity="center_vertical|right"
+        android:text="拆解状态:xxxx"
+        android:textColor="@color/color_main"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:id="@+id/tv_chaijie_worker"
+        style="@style/WidthFullStyle"
+
+        android:gravity="center_vertical|left"
+        android:text="拆解人"
+        android:ems="8"
+        android:layout_toLeftOf="@+id/tv_chajie_state"
+        android:singleLine="true"
+        android:ellipsize="end"
+        />
+
+    <TextView
+        android:id="@+id/tv_tip_chaijie_type"
+        style="@style/NormalStyle"
+
+        android:layout_below="@+id/tv_chaijie_worker"
+        android:layout_marginTop="@dimen/margin10"
+        android:textColor="@color/red2"
+        android:text="粗拆"/>
+
+
+</RelativeLayout>

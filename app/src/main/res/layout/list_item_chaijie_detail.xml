@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/padding10"
+    >
+
+
+    <RelativeLayout
+
+        style="@style/WidthFullStyle"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/margin5"
+        >
+
+        <TextView
+            android:id="@+id/tv_lingjian_name"
+            style="@style/NormalStyle"
+            android:layout_centerVertical="true"
+            android:text="零件名称名称名称"
+
+            android:ems="7"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/word14" />
+        <LinearLayout
+            android:id="@+id/layout_lingjian_num_edit"
+            style="@style/NormalStyle"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            >
+            <TextView
+                android:id="@+id/tv_add_lingjian_num"
+                style="@style/NormalStyle"
+                android:paddingLeft="@dimen/padding5"
+                android:paddingRight="@dimen/padding5"
+                android:gravity="center"
+                android:text="+"
+                android:textSize="@dimen/word20"
+                android:background="@drawable/shape_rect_black_line"
+                />
+            <TextView
+                android:id="@+id/tv_lingjian_num"
+                style="@style/NormalStyle"
+                android:gravity="center"
+                android:inputType="number"
+                android:ems="2"
+                android:text="1"
+                android:textSize="@dimen/word20"
+                android:background="@drawable/shape_rect_black_line"
+                />
+            <TextView
+                android:id="@+id/tv_sub_lingjian_num"
+                style="@style/NormalStyle"
+                android:paddingLeft="@dimen/padding5"
+                android:paddingRight="@dimen/padding5"
+                android:text="—"
+                android:gravity="center"
+                android:textSize="@dimen/word20"
+                android:background="@drawable/shape_rect_black_line"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_tag_lingjian_num"
+            style="@style/NormalStyle"
+            android:text="数量:"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/layout_lingjian_num_edit"
+            android:layout_marginRight="@dimen/margin10"/>
+        <!---->
+    </RelativeLayout>
+
+    <com.aofan.cardismantling.widget.GridViewForScrollView
+        android:id="@+id/gv_lingjian_pic"
+        style="@style/WidthFullStyle"
+        android:layout_marginBottom="@dimen/margin5"
+        android:numColumns="4"
+        android:verticalSpacing="@dimen/margin5" />
+    <RelativeLayout
+        style="@style/WidthFullStyle"
+        android:orientation="horizontal"
+        >
+
+
+        <TextView
+            android:id="@+id/tv_submit_lingjian_chaijieinfo"
+            style="@style/NormalStyle"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/margin5"
+            android:gravity="center"
+            android:background="@drawable/shape_rect_green_line"
+            android:paddingBottom="@dimen/padding5"
+            android:paddingTop="@dimen/padding5"
+            android:paddingLeft="@dimen/padding20"
+            android:paddingRight="@dimen/padding20"
+            android:text="提交"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/tv_to_take_photo"
+            style="@style/NormalStyle"
+            android:layout_toLeftOf="@+id/tv_submit_lingjian_chaijieinfo"
+            android:layout_marginRight="@dimen/margin5"
+            android:background="@drawable/shape_rect_green_line"
+            android:gravity="center"
+            android:paddingBottom="@dimen/padding5"
+            android:paddingTop="@dimen/padding5"
+            android:paddingLeft="@dimen/padding20"
+            android:paddingRight="@dimen/padding20"
+            android:text="拍照"
+            android:textColor="@color/gray" />
+    </RelativeLayout>
+
+</LinearLayout>

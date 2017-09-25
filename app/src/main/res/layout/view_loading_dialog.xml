@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding10"
+    android:gravity="center"
+    android:background="@drawable/shape_rect_corner_gray_back">
+
+    <com.aofan.cardismantling.widget.CustomProgressView
+        android:id="@+id/progressview"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:fitstColor="#50ffffff"
+        app:secondColor="#ffffffff"
+        app:circleWidth="10dp"
+        app:splitSize="2"
+        app:dotCount="30"/>
+    <TextView
+        android:id="@+id/loadingtv"
+        style="@style/NormalStyle"
+        android:layout_marginLeft="@dimen/margin5"
+        android:textColor="@color/white"
+        android:textSize="@dimen/word20"
+        android:text="@string/loadingandwait"/>
+
+</LinearLayout>

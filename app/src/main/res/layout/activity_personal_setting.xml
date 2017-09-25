@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grayqing">
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/common_title_bar"/>
+    <RelativeLayout
+        android:id="@+id/headpiclayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin10"
+        android:paddingLeft="@dimen/padding15"
+        android:paddingRight="@dimen/padding15"
+        android:paddingTop="@dimen/padding10"
+        android:paddingBottom="@dimen/padding10"
+        android:background="@drawable/selector_back_white_gray"
+        >
+        <!--<TextView
+            style="@style/NormalStyle"
+            android:layout_centerVertical="true"
+            android:text="头像"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/graydark"
+            android:textSize="@dimen/word16"/>-->
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/headpiciv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ico_default_head"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_account"
+        style="@style/PersonalCenterTvStyle"
+        android:text="账号" />
+    <View
+        style="@style/LineWidthFullStyle"
+        android:background="@color/grayqing"/>
+    <TextView
+        android:id="@+id/tv_realname"
+        style="@style/PersonalCenterTvStyle"
+        android:text="真实姓名" />
+    <View
+        style="@style/LineWidthFullStyle"
+        android:background="@color/grayqing"/>
+    <TextView
+        android:id="@+id/tv_telno"
+        style="@style/PersonalCenterTvStyle"
+        android:text="手机号码" />
+    <View
+        style="@style/LineWidthFullStyle"
+        android:background="@color/grayqing"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin20"
+        android:padding="@dimen/padding10"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/existapptv"
+            style="@style/WidthFullStyle"
+            android:padding="@dimen/padding10"
+            android:gravity="center"
+            android:background="@drawable/shape_rect_corner_green_bg"
+            android:textColor="@color/white"
+            android:text="注销登陆"/>
+    </LinearLayout>
+
+</LinearLayout>
